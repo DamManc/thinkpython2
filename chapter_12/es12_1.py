@@ -13,16 +13,16 @@ def most_frequent(s):
     # ordino in modo descescente
     v.sort(reverse=True)
     # creo la lista result con solo i valori chiave
-    res = []
+    result = []
     for freq, x in v:
-        res.append(x)
-    print(res)
+        result.append(x)
+    return result
 
 
 def main():
     print('Enter a word')
     s = input()
-    most_frequent(s)
+    print(most_frequent(s))
 
 
 if __name__ == '__main__':
